@@ -29,6 +29,7 @@ public class BookService {
     Validate.notEmpty(String.valueOf(book.getCategory().getId()),"传过来的分类信息不能为空");
     Validate.notEmpty(book.getAuthor(),"书籍的作者信息不能为空");
     Validate.notEmpty(book.getTitle(),"书籍的标题不能为空");
+    System.out.println();
 
     //为空，说明是新增书籍,判断是否存在
     if(book.getId() == null){
